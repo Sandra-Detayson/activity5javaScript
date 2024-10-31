@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Session</title>
+    <link rel="stylesheet" href="css/custom.css">
+</head>
+<body>
+     
+    <h1 id="result"></h1>
+    <h2 class="output"></h2>
+    <h3 id="outputName"></h3>
+
+    <button type="button" onclick="alert(computeTwoNumbers(12, 3));">Click Me</button>
+    <button type="button" onclick="confirmSubmission();">Click Me Again</button>
+    <button type="button" onclick="displayStudentInfo();">Show Student Information</button> <!-- New Button -->
+
+    <br><br>
+    <h3 id="compute"></h3>
+
+    <script src="custom.js"></script>
+    <script type="text/javascript">
+          document.write("HELLO WORLD");
+          console.log("HELLO WORLD");
+          let name = "SANDRA DETAYSON";
+          var age = 20;
+          const remarks = "STUDENT";
+          document.write("<br>");
+          document.write(name + " " + age + " " + remarks);
+          document.getElementById("result").innerHTML = name + " " + age + " " + remarks;
+          document.getElementsByClassName("output")[0].innerHTML = name + " " + age + " " + remarks;
+          document.getElementById("outputName").innerHTML = displayName("sandra detayson");
+          document.write("<br>");
+          document.write(displayName("SANDRA DETAYSON "));
+          console.log(computeTwoNumbers(12, 3));
+          document.write(computeTwoNumbers(12, 3));
+          document.getElementById("compute").innerHTML = computeTwoNumbers(12, 3);
+
+          // Execute additional functions
+          ComputeGrade();
+    </script>
+</body>
+</html>
